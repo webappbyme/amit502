@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit | Pet Adoption Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pet Adoption Center</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#adoptions">Adoptions</a>
+            <a href="#calculator">Care Cost Calculator</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Amit's Pet Adoption Center</h2>
+        <p>Your new furry friend is waiting for you!</p>
+        <p>At Amit's Pet Adoption Center, we believe every pet deserves a loving home.
+             Whether you're looking for a playful puppy, a cuddly kitten, or a gentle rabbit, 
+             our center is here to connect you with your perfect companion. With a mission to promote animal welfare, 
+             we strive to provide a safe and nurturing environment for all our furry friends until they find their forever 
+             families. Adopting a pet is a joyful journey, and we are here to guide you every step of the way.</p>
+
+        <p>Our center not only offers a wide range of adorable pets for adoption but also provides valuable 
+            resources to help you care for your new friend. From our Care Cost Calculator, which helps you plan 
+            for your pet’s expenses, to our Adoption Inquiry Form, making the adoption process seamless and stress-free, 
+            we ensure a positive experience for all adopters. Start your journey with us today and give a deserving pet 
+            the loving home they’ve been waiting for!</p>
+
+        <img src="hero.jpg" alt="Pets">
+    </section>
+
+    <section id="adoptions">
+        <h2>Pets Available for Adoption</h2>
+        <div class="pet-list">
+            <div class="pet-item">
+                <img src="dog.jpg" alt="Dog">
+                <h3>Charlie</h3>
+                <p>Type: Dog</p>
+                <p>Age: 2 years</p>
+            </div>
+            <div class="pet-item">
+                <img src="cat.jpg" alt="Cat">
+                <h3>Luna</h3>
+                <p>Type: Cat</p>
+                <p>Age: 3 years</p>
+            </div>
+            <div class="pet-item">
+                <img src="rabbit.jpg" alt="Rabbit">
+                <h3>Snowball</h3>
+                <p>Type: Rabbit</p>
+                <p>Age: 1 year</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator">
+        <div class="box">
+            <h2>Care Cost Calculator</h2>
+            <form id="cost-calculator">
+                <label for="pet-type">Select Pet Type:</label>
+                <select id="pet-type" required>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="rabbit">Rabbit</option>
+                </select>
+                <label for="food-cost">Food Cost ($):</label>
+                <input type="number" id="food-cost" required>
+                <label for="health-cost">Health Care Cost ($):</label>
+                <input type="number" id="health-cost" required>
+                <button type="button" onclick="calculateCareCost()">Calculate</button>
+            </form>
+            <p id="cost-result"></p>
+        </div>
+    </section>    
+
+    <section id="contact">
+        <div class="box">
+            <h2>Adoption Inquiry Form</h2>
+            <form id="adoption-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required></textarea>
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Amit Pet Adoption Center. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
